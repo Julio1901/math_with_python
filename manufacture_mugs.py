@@ -7,7 +7,6 @@ eventos:
 1- A curva de crescimento exponencial
 2- o número total de canecas produzidas ao final dos 16 dias
 '''
-import matplotlib.pyplot as plt
 import matplotlib.pyplot
 
 total_number_of_mugs = 0
@@ -40,26 +39,17 @@ for x in list_of_days_with_mugs_production:
     actual_production = actual_register[1]
 
     total_days_list.append(actual_day)
+    actual_production = int(actual_production)
     total_numbers_mugs_ordened.append(actual_production)
     
     counter += 1
 
-#Para teste, linha do gráfico se mantém reta na visualização, está errado
-total_numbers_mugs_ordened.append(57)
-total_numbers_mugs_ordened.append(0)
-total_numbers_mugs_ordened.append(200)
-
-total_days_list.append(17)
-total_days_list.append(18)
-total_days_list.append(19)
-
 print(total_days_list)
-print(total_numbers_mugs_ordened)
 
 
 
 print('Demonstrando em um gráfico')
-matplotlib.pyplot.plot(total_numbers_mugs_ordened, total_days_list)
+matplotlib.pyplot.plot(total_days_list, total_numbers_mugs_ordened )
 
 matplotlib.pyplot.show()
 
