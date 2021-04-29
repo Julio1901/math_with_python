@@ -7,7 +7,7 @@ result of it</p>
 
 Project Status: Under Construction :warning:
 
-<h2>Features: </h2>
+## Features:
 - Calculate exponential growth
-  -This function requested the user three parameters: Initial number; Percentage of continuous growth; Number of months in which the event will take place.
+  - This function requested the user three parameters: Initial number; Percentage of continuous growth; Number of months in which the event will take place.
   It simulates linear exponential growth, occurring over the months always having the percentage that the user defined as constant. The result will be projected on a graph for the user to be able to verify the simulated exponential growth curve. 
